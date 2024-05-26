@@ -1,0 +1,79 @@
+<!--Tela apenas pra estilização simulando que se um chamado foi resolvido ele vai notificar a pessoa que enviou o chamado informando-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Resolução</title>
+    <link rel="stylesheet" href="resolucao.css" />
+    
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="../menu/menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="../cadastro_pessoa/cad_pessoa.html"
+            >Cadastro de Pessoas</a
+          >
+        </li>
+        <li><a href="http://localhost:8080/users">Chamados</a></li>
+      </ul>
+    </nav>
+
+
+    <form class="formulario" action="">
+      
+      <h1 class="title"><i class="icon icon-mail-1"></i> Enviar resolução de chamado</h1>
+       
+   
+       <label class="label">
+           <span>Número do chamado</span>
+           <input id="numero" type="text" name="numero" class="campo" placeholder="Número do chamado" required=""/>
+       </label>
+       
+       <label class="label">
+           <span>Nome do usuário</span>
+           <input id= "nome" type="text" name="nome" class="campo" placeholder="Nome do usuário" required=""/>   
+       </label>
+
+       <label class="naoexibir">
+           <span>Não preencher:</span><br>
+           <input type="text" name="url" value=""></p>
+       </label> 
+       
+       <label class="label">
+        <span>Departamento</span>
+        <input id= "depart" type="text" name="depart" class="campo" placeholder="Digite o departamento" required=""/>  
+       </label>
+
+       <label class="label">
+        <span>Data de resolução</span>
+        <input id= "data" type="text" name="data" class="campo" placeholder="Data de resolução do chamado" required=""/>  
+       </label>
+
+       <label class="label">
+        <span>Descrição do problema</span>
+        <input id= "problema" type="text" name="problema" class="campo" placeholder="Descrição do problema" required=""/>  
+       </label>
+
+       <label class="label">
+        <span>Descrição da solução</span>
+        <input id= "solucao" type="text" name="solucao" class="campo" placeholder="Descrição do problema" required=""/>  
+       </label>
+       
+       
+       <label class="label"> 
+           
+           <input type="hidden" name="acao" value="enviar"> 
+           <button type="submit" class="botao"> Enviar </button>
+       
+       </label>
+
+   </form>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!--Nesta tela colocamos fora do sistema no qual vai ser para reportar algum problema ao colocar as informações vai ser salva no banco de dados relatar_problema e irá aparecer as infromações na tabela de gerenciamento de chamados-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="relatar.css" />
+    <script src="relatar.js" defer></script>
+  </head>
+  <body>
+
+    <form class="formulario" action="">
+      
+      <h1 class="title"><i class="icon icon-mail-1"></i> Relatar problema</h1>
+       
+       <label class="label">
+           <span>Nome</span>
+           <input id="nome" type="text" name="nome" class="campo" placeholder="Digite o seu nome" required=""/>
+       </label>
+       
+       <label class="label">
+           <span>E-mail</span>
+           <input id="email" type="email" name="email" class="campo" placeholder="Digite o seu Email" required=""/>
+       </label>
+       
+       <label class="label">
+           <span>Departamento</span>
+           <input id="departamento" type="text" name="depart" class="campo" placeholder="Digite o seu departamento" required=""/>   
+       </label>
+
+       <label class="naoexibir">
+           <span>Não preencher:</span><br>
+           <input type="text" name="url" value=""></p>
+       </label> 
+       
+       <label class="label">
+        <span>Descrição do problema</span>
+        <input id="descricao" type="text" name="descri" class="campo" placeholder="Digite a descrição do problema" required=""/>  
+       </label>
+
+       <label class="label">
+        <span>Prioridade</span>
+        <input id= "prioridade" type="text" name="prioridade" class="campo" placeholder="Qual a prioridade" required=""/>  
+       </label>
+
+     
+       
+       <label class="label"> 
+           
+           <input type="hidden" name="acao" value="enviar"> 
+           <button type="submit" class="botao"> Enviar </button>
+       
+       </label>
+
+   </form>
+  </body>
+</html>

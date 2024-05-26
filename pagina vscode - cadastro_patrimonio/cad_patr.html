@@ -1,0 +1,71 @@
+<!--Nesta tela o usuario ao preencher suas informações e apertar no botão enviar suas informações serão salvar em um banco de dados MySQL na tabela cadastro_patrimonio-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Patrimônio</title>
+    <link rel="stylesheet" href="cad_patr.css" />
+    <script src="cad_patr.js" defer></script>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="../menu/menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="../cadastro_pessoa/cad_pessoa.html"
+            >Cadastro de Pessoas</a
+          >
+        </li>
+        <li><a href="http://localhost:8080/users">Chamados</a></li>
+      </ul>
+    </nav>
+    
+    <form class="formulario" action="">
+      
+      <h1 class="title"><i class="icon icon-mail-1"></i> Cadastro de Patrimônio</h1>
+       
+   
+       <label class="label">
+           <span>Descrição</span>
+           <input id="descricao" type="text" name="desc" class="campo" placeholder="Digite a descrição" required=""/>
+       </label>
+       
+       <label class="label">
+           <span>Categoria</span>
+           <input id= "categoria" type="text" name="cat" class="campo" placeholder="Digite a categoria" required=""/>   
+       </label>
+
+       <label class="naoexibir">
+           <span>Não preencher:</span><br>
+           <input type="text" name="url" value=""></p>
+       </label> 
+       
+       <label class="label">
+        <span>Data de aquisição</span>
+        <input id= "aquisicao" type="text" name="date" class="campo" placeholder="Digite a data de aquisição" required=""/>  
+       </label>
+
+       <label class="label">
+        <span>Valor</span>
+        <input id= "valor" type="text" name="valor" class="campo" placeholder="Digite o valor" required=""/>  
+       </label>
+
+       <label class="label">
+        <span>Departamento</span>
+        <input id= "departamento" type="text" name="depart" class="campo" placeholder="Digite o departamento" required=""/>  
+       </label>
+       
+       <label class="label"> 
+           
+           <input type="hidden" name="acao" value="enviar"> 
+           <button type="submit" class="botao"> Enviar </button>
+       
+       </label>
+
+   </form>
+  </body>
+</html>
